@@ -1,0 +1,39 @@
+{
+	"initial": [
+		"libs/modules/egret/egret.js",
+		"libs/modules/egret/egret.web.js",
+		"libs/modules/eui/eui.js",
+		"libs/modules/assetsmanager/assetsmanager.js",
+		"libs/modules/tween/tween.js",
+		"libs/modules/promise/promise.js",
+		"libs/modules/game/game.js",
+		"libs/modules/dragonBones/dragonBones.js",
+		"libs/modules/socket/socket.js",
+		"libs/WXCloudApi/WXCloudApi.js",
+		"libs/egretmgobe/egretmgobe.js",
+		"libs/jszip/jszip.js"
+	],
+	"game": [
+		"bin-debug/core/base/BaseView.js",
+		"bin-debug/view/GameViewCE.js",
+		"bin-debug/core/mvc/interfaces/IMediator.js",
+		"bin-debug/Platform.js",
+		"bin-debug/ThemeAdapter.js",
+		"bin-debug/AssetAdapter.js",
+		"bin-debug/core/manager/UpdateManager.js",
+		"bin-debug/core/manager/XMLManager.js",
+		"bin-debug/core/manager/interfaces/IUpdateable.js",
+		"bin-debug/core/mvc/Facade.js",
+		"bin-debug/LoadingUI.js",
+		"bin-debug/core/ui/UIRocker.js",
+		"bin-debug/event/GameEvent.js",
+		"bin-debug/global/GameGlobal.js",
+		"bin-debug/view/GameView.js",
+		"bin-debug/Main.js",
+		"bin-debug/view/battle/BattleView.js",
+		"bin-debug/view/start/Bullet.js",
+		"bin-debug/view/start/Plane.js",
+		"bin-debug/view/start/Socket.js",
+		"bin-debug/view/start/StartView.js"
+	]
+}

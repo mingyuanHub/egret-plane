@@ -1,0 +1,226 @@
+{
+	"groups": [
+		{
+			"keys": "description_json,jszip_zip,description2_json,border_png,header_png,radiobutton_select_disabled_png,radiobutton_unselect_png,radiobutton_select_down_png,radiobutton_select_up_png,on_png,off_png,handle_png,checkbox_unselect_png,checkbox_select_disabled_png,checkbox_select_up_png,checkbox_select_down_png,track_png,tracklight_png,thumb_png,thumb_pb_png,track_pb_png,button_down_png,button_up_png,egret_icon_png,track_sb_png,roundthumb_png,selected_png,bg_jpg,common_plane_json,battle_ui_json,bullet_hit_json,common_baozha_json,common_bullet_json,common_fashe_json,common_self_bullet_json,b_json,b_png",
+			"name": "preload"
+		},
+		{
+			"keys": "logo_wuzhuang_png,loadingBg_png,loading_progress_line_png,loading_progress_bg_png",
+			"name": "first"
+		}
+	],
+	"resources": [
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description_json"
+		},
+		{
+			"url": "config/jszip.zip",
+			"type": "bin",
+			"name": "jszip_zip"
+		},
+		{
+			"url": "config/description.json",
+			"type": "json",
+			"name": "description2_json"
+		},
+		{
+			"url": "assets/Panel/border.png",
+			"type": "image",
+			"name": "border_png"
+		},
+		{
+			"url": "assets/Panel/header.png",
+			"type": "image",
+			"name": "header_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_disabled.png",
+			"type": "image",
+			"name": "radiobutton_select_disabled_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_unselect.png",
+			"type": "image",
+			"name": "radiobutton_unselect_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_down.png",
+			"type": "image",
+			"name": "radiobutton_select_down_png"
+		},
+		{
+			"url": "assets/RadioButton/radiobutton_select_up.png",
+			"type": "image",
+			"name": "radiobutton_select_up_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/on.png",
+			"type": "image",
+			"name": "on_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/off.png",
+			"type": "image",
+			"name": "off_png"
+		},
+		{
+			"url": "assets/ToggleSwitch/handle.png",
+			"type": "image",
+			"name": "handle_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_unselect.png",
+			"type": "image",
+			"name": "checkbox_unselect_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_disabled.png",
+			"type": "image",
+			"name": "checkbox_select_disabled_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_up.png",
+			"type": "image",
+			"name": "checkbox_select_up_png"
+		},
+		{
+			"url": "assets/CheckBox/checkbox_select_down.png",
+			"type": "image",
+			"name": "checkbox_select_down_png"
+		},
+		{
+			"url": "assets/Slider/track.png",
+			"type": "image",
+			"name": "track_png"
+		},
+		{
+			"url": "assets/Slider/tracklight.png",
+			"type": "image",
+			"name": "tracklight_png"
+		},
+		{
+			"url": "assets/Slider/thumb.png",
+			"type": "image",
+			"name": "thumb_png"
+		},
+		{
+			"url": "assets/ProgressBar/thumb_pb.png",
+			"type": "image",
+			"name": "thumb_pb_png"
+		},
+		{
+			"url": "assets/ProgressBar/track_pb.png",
+			"type": "image",
+			"name": "track_pb_png"
+		},
+		{
+			"url": "assets/Button/button_down.png",
+			"type": "image",
+			"name": "button_down_png"
+		},
+		{
+			"url": "assets/Button/button_up.png",
+			"type": "image",
+			"name": "button_up_png"
+		},
+		{
+			"url": "assets/egret_icon.png",
+			"type": "image",
+			"name": "egret_icon_png"
+		},
+		{
+			"url": "assets/ScrollBar/track_sb.png",
+			"type": "image",
+			"name": "track_sb_png"
+		},
+		{
+			"url": "assets/ScrollBar/roundthumb.png",
+			"type": "image",
+			"name": "roundthumb_png"
+		},
+		{
+			"url": "assets/ItemRenderer/selected.png",
+			"type": "image",
+			"name": "selected_png"
+		},
+		{
+			"url": "assets/bg.jpg",
+			"type": "image",
+			"name": "bg_jpg"
+		},
+		{
+			"url": "assets/_scene/loading/loadingBg.png",
+			"type": "image",
+			"name": "loadingBg_png"
+		},
+		{
+			"url": "assets/_scene/loading/loading_progress_bg.png",
+			"type": "image",
+			"name": "loading_progress_bg_png"
+		},
+		{
+			"url": "assets/_scene/loading/loading_progress_line.png",
+			"type": "image",
+			"name": "loading_progress_line_png"
+		},
+		{
+			"url": "assets/_scene/loading/logo_wuzhuang.png",
+			"type": "image",
+			"name": "logo_wuzhuang_png"
+		},
+		{
+			"name": "common_plane_json",
+			"type": "sheet",
+			"url": "assets/_scene/start/common_plane.json",
+			"subkeys": "zhanDouJi,hongZhaJi,WZZSJ_1,WZZSJ_2"
+		},
+		{
+			"name": "battle_ui_json",
+			"type": "sheet",
+			"url": "assets/_scene/start/battle_ui.json",
+			"subkeys": "trans_tank_1_png,trans_tank_2_png,zhaoHuanBt_png,blood_enemyIcon_png,blood_friendIcon_png,bloodBar_png,bossBlood_1_png,bossBlood_2_png,bossBlood_3_png,btn_huoli_down_png,btn_huoli_up_png,btn_shezhi_down_png,btn_shezhi_up_png,BUFF_di_png,BUFF_hongtiao_png,BUFF_hudun_png,BUFF_jiaxue_png,BUFF_lutiao_png,BUFF_yun_png,BUFF_zidan_png,ctrl_attackBt_png,ctrl_direction_1_png,ctrl_direction_2_png,ctrl_skillBt_1_png,ctrl_skillBt_2_png,ctrl_skillBt_3_png,halo_png,HelicopterBar_1_png,HelicopterBar_2_png,hongguang_png,hostageBar_png,jiantou_png,miniBloodBar_1_png,miniBloodBar_2_png,miniBloodBar_3_png,miniBloodBar_4_png,player_png,playerBlood_png,playerPanel_Chuan_1_png,playerPanel_Chuan_2_png,playerPanel_Chuan_3_png,playerPanel_Jeep_1_png,playerPanel_Jeep_2_png,playerPanel_Jeep_3_png,playerPanel_Tank_1_png,playerPanel_Tank_2_png,playerPanel_Tank_3_png,time_png,trans_bar_png,trans_boat_1_png,trans_boat_2_png,trans_jeep_1_png,trans_jeep_2_png"
+		},
+		{
+			"name": "bullet_hit_json",
+			"type": "sheet",
+			"url": "assets/_scene/start/bullet/bullet_hit.json",
+			"subkeys": "tanKe5_fashe_4,tanKe2_fashe_1,tanKe2_fashe_2,tanKe3_fashe,tanKe5_fashe_1,tanKe5_fashe_2,tanKe5_fashe_3"
+		},
+		{
+			"name": "common_baozha_json",
+			"type": "sheet",
+			"url": "assets/_scene/start/bullet/common_baozha.json",
+			"subkeys": "baozha4_4,baozha4_5,baozha4_6,baozha4_7,baozha4_8,daBaoZha_1,daBaoZha_2,daBaoZha_3,daBaoZha_4,daBaoZha_5,daBaoZha_6,daBaoZha_7,daBaoZha_8,daBaoZha_9,daBaoZha_10,daBaoZha_11,difang_baozha_1,difang_baozha_2,difang_baozha_3,difang_baozha_4,difang_baozha_5,expbl_1,expbl_2,expbl_3,expbl_4,expbl_5,expbl_6,expbl_7,expbs_1,expbs_2,expbs_3,expbs_4,expbs_5,explosion1_1,explosion1_2,explosion1_3,explosion1_4,explosion1_5,explosion1_6,explosion2_1,explosion2_2,explosion2_3,explosion2_4,explosion2_5,explosion2_6,explosion3_1,explosion3_2,explosion3_3,explosion3_4,explosion4_1,explosion4_2,explosion4_3,explosion4_4,explosion4_5,explosion4_6,explosion4_7,explosion4_8,exprl_1,exprl_2,exprl_3,exprl_4,exprl_5,exprl_6,exprl_7,exprs_1,exprs_2,exprs_3,exprs_4,exprs_5,expyl_1,expyl_2,expyl_3,expyl_4,expyl_5,expyl_6,expyl_7,expys_1,expys_2,expys_3,expys_4,expys_5,tanke_baozha1_1,tanke_baozha1_2,tanke_baozha1_3,tanke_baozha1_4,tanKe6_mingzhong_1,tanKe6_mingzhong_2,tanKe6_mingzhong_3,zidan_baozha_1,zidan_baozha_2,zidan_baozha_3,zidan_baozha_4,baozha1_1,baozha1_2,baozha1_3,baozha1_4,baozha1_5,baozha2_1,baozha2_2,baozha2_3,baozha2_4,baozha2_5,baozha3_1,baozha3_2,baozha3_3,baozha3_4,baozha3_5,baozha3_6,baozha3_7,baozha4_1,baozha4_2,baozha4_3"
+		},
+		{
+			"name": "common_bullet_json",
+			"type": "sheet",
+			"url": "assets/_scene/start/bullet/common_bullet.json",
+			"subkeys": "effjgy_l,effjgy_m1,effjgy_m2,effjgy_m3,effjgy_m4,effjgy_s,efflozb_l,efflozb_m,efflozb_s,efflozr_l,efflozr_m,efflozr_s,efflozy_l,efflozy_m,efflozy_s,effrecb_l,effrecb_m,effrecb_s,effrecr_l,effrecr_m,effrecr_s,effrecy_l,effrecy_m,effrecy_s,effsqab_l,effsqab_m,effsqab_s,effsqar_l,effsqar_m,effsqar_s,effsqay_l,effsqay_m,effsqay_s,efftrib_l,efftrib_m,efftrib_s,efftrir_l,efftrir_m,efftrir_s,efftriy_l,efftriy_m,efftriy_s,feidan_1,feidan_2,feidan_3,huojiandan_1,huojiandan_2,huojiandan_3,liudan_1,liudan_1_1,liudan_1_2,liudan_1_3,liudan_2,liudan_2_1,liudan_2_2,liudan_2_3,liudan_3,liudan_3_1,liudan_3_2,liudan_3_3,liudan_4,liudan_4_1,liudan_4_2,liudan_4_3,liudan_5,liudan_5_1,liudan_5_2,liudan_5_3,liudan_6,liudan_7,liudan_8,LJBullet_1_1,LJBullet_1_2,LJBullet_1_3,LJBullet_2_1,LJBullet_2_2,LJBullet_2_3,LJBullet_3_1,LJBullet_3_2,LJBullet_3_3,LJBullet_4_1,LJBullet_4_2,LJBullet_4_3,LJBullet_5_1,LJBullet_5_2,LJBullet_5_3,LJBullet_6_1,LJBullet_6_2,LJBullet_6_3,lockAiming_1,lockAiming_2,lockAiming_3,lockAiming_4,lockAiming_5,lockAiming_6,tanke_zidan1_1,tanke_zidan1_2,tanKe2_zidan_1,tanKe2_zidan_2,tanKe3_zidan_1,tanKe3_zidan_2,tanKe4_zidan,tanKe5_zidan_1,tanKe5_zidan_2,zidan_2_1,zidan_3_1,zidan_4_1,zidan_5_1,zidan1_1,common_zidan_1,daodan_1_1,daodan_1_2,daodan_2_1,daodan_2_2,daodan_3_1,daodan_3_2,daodan_4_1,daodan_4_2,daodan_5_1,daodan_5_2,dianjiangdan_1,dianjiangdan_2,dianjiangdan_3,effcrossb_l,effcrossb_m,effcrossb_s,effcrossr_l,effcrossr_m,effcrossr_s,effcrossy_l,effcrossy_m,effcrossy_s,effellb_l,effellb_m,effellb_s,effellr_l,effellr_m,effellr_s,effelly_l,effelly_m,effelly_s,effjgb_l,effjgb_s,effjgr_l,effjgr_s"
+		},
+		{
+			"name": "common_fashe_json",
+			"type": "sheet",
+			"url": "assets/_scene/start/bullet/common_fashe.json",
+			"subkeys": "tanlke_fashe1_1,tanlke_fashe1_2,jipuche_huoli_1,jipuche_huoli_2,liudanche_huoli_1,liudanche_huoli_2,liudanche_huoli_3,liudanche_huoli_4,tanKe4_mingzhong_1,tanKe4_mingzhong_2,tanKe4_mingzhong_3,tanKe4_mingzhong_4"
+		},
+		{
+			"name": "common_self_bullet_json",
+			"type": "sheet",
+			"url": "assets/_scene/start/bullet/common_self_bullet.json",
+			"subkeys": "ziDan4_3,ziDan4_4,ziDan4_5,ziDan5_1,ziDan5_2,ziDan5_3,ziDan5_4,ziDan5_5,feiDan1_1,feiDan1_2,feiDan1_3,feiDan1_4,feiDan1_5,feiDan2_1,feiDan2_2,feiDan2_3,feiDan2_4,feiDan2_5,feiDan3_1,feiDan3_2,feiDan3_3,feiDan3_4,feiDan3_5,feiDan4_1,feiDan4_2,feiDan4_3,feiDan4_4,feiDan4_5,feiDan5_1,feiDan5_2,feiDan5_3,feiDan5_4,feiDan5_5,nengLiang1_1,nengLiang1_2,nengLiang1_3,nengLiang1_4,nengLiang1_5,nengLiang2_1,nengLiang2_2,nengLiang2_3,nengLiang2_4,nengLiang2_5,nengLiang3_1,nengLiang3_2,nengLiang3_3,nengLiang3_4,nengLiang3_5,nengLiang4_1,nengLiang4_2,nengLiang4_3,nengLiang4_4,nengLiang4_5,nengLiang5_1,nengLiang5_2,nengLiang5_3,nengLiang5_4,nengLiang5_5,ziDan1_1,ziDan1_2,ziDan1_3,ziDan1_4,ziDan1_5,ziDan2_1,ziDan2_2,ziDan2_3,ziDan2_4,ziDan2_5,ziDan3_1,ziDan3_2,ziDan3_3,ziDan3_4,ziDan3_5,ziDan4_1,ziDan4_2"
+		},
+		{
+			"name": "b_json",
+			"type": "json",
+			"url": "assets/_scene/start/temp/b.json"
+		},
+		{
+			"name": "b_png",
+			"type": "image",
+			"url": "assets/_scene/start/temp/b.png"
+		}
+	]
+}

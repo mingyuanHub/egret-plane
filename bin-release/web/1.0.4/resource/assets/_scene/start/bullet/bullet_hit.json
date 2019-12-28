@@ -1,0 +1,8 @@
+{"file":"bullet_hit.png","frames":{
+"tanKe5_fashe_4":{"x":1,"y":40,"w":18,"h":17,"offX":4,"offY":0,"sourceW":24,"sourceH":17},
+"tanKe2_fashe_1":{"x":29,"y":19,"w":28,"h":14,"offX":0,"offY":0,"sourceW":29,"sourceH":14},
+"tanKe2_fashe_2":{"x":1,"y":1,"w":29,"h":14,"offX":0,"offY":0,"sourceW":29,"sourceH":14},
+"tanKe3_fashe":{"x":51,"y":48,"w":9,"h":4,"offX":0,"offY":0,"sourceW":9,"sourceH":4},
+"tanKe5_fashe_1":{"x":51,"y":37,"w":9,"h":7,"offX":9,"offY":10,"sourceW":24,"sourceH":17},
+"tanKe5_fashe_2":{"x":1,"y":19,"w":24,"h":17,"offX":0,"offY":0,"sourceW":24,"sourceH":17},
+"tanKe5_fashe_3":{"x":29,"y":37,"w":18,"h":17,"offX":5,"offY":0,"sourceW":24,"sourceH":17}}}

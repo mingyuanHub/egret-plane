@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="BattleViewSkin" width="720" height="1280" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="loadingBg_png" x="0" y="-1280" width="720" height="1280" id="bgImg0"/>
+	<e:Image id="bgImg1" source="loadingBg_png" x="0" y="0" width="720" height="1280"/>
+	<e:Image source="loadingBg_png" x="0" y="1280" width="720" height="1280" id="bgImg2"/>
+</e:Skin>
