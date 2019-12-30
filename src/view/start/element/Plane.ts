@@ -33,35 +33,29 @@ class Plane extends egret.Sprite {
         this.addChild(new egret.Bitmap(RES.getRes("hongZhaJi")));
     }
 
-    public update(delta, battle:StartView) {
-        this.sendBullets(delta, battle)
-        this.movePlane(delta, battle);
+    public update(delta) {
+        this.sendBullets(delta)
+        this.movePlane();
         this.moveBullets()
     }
 
-    public sendBullets(delta, battle:eui.Component):void {
+    public sendBullets(delta):void {
         this._sendBulletDelta -= delta;
 
         if (this._sendBulletDelta < 0) {
             this._sendBulletDelta = this.sendBulletDelta;
-
-            let bullet = new Bullet();
-            this.bulletDic.push(bullet)
-            battle.addChild(bullet)
-            
-            bullet.x = this.x + this.width / 4;
-            bullet.y = this.y;
+            Facade.sendNotification(GameEvent.ADD_BULLET, this, "");
         }
     }
 
-    public movePlane(delta, battle) {
+    public movePlane() {
         let dirState = RockerControl.getInstance().dirState
         if(dirState.state != 0 && this.isMe) {
             let speedX = this.platMoveSpeed * Math.cos((dirState.rotation - 90) * Math.PI / 180);
             let speedY = this.platMoveSpeed * Math.sin((dirState.rotation - 90) * Math.PI / 180);
             this.x += speedX;
             this.y += speedY;
-            battle.sendWs({"type":2, "x": this.x, "y":this.y});
+            Ws.getInstance().sendMessage({"type":2, "x": this.x, "y":this.y})
         }
     }
 

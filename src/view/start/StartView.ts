@@ -24,11 +24,22 @@ class StartView extends BaseView implements IUpdateable {
 
     public notificationListerners():Array<string> {
         return [
+            GameEvent.ADD_BULLET,
+            GameEvent.WS_RECEIVE
         ]
     }
 
     public executeNotification(notificationName:string, obj:any, any2:any) {
-
+        switch (notificationName) {
+            case GameEvent.ADD_BULLET:  
+                this.addBullet(obj)
+                break;
+            case GameEvent.WS_RECEIVE:  
+                this.wsReceive(obj)
+                break;
+            default:
+                break;
+        }
     }
 
     public get moduleName(): string {
@@ -37,8 +48,8 @@ class StartView extends BaseView implements IUpdateable {
 
     protected loadComplete() {
         super.loadComplete()
+        Ws.getInstance().connect();
         this.init()
-        this.connetWsHttp();
         UpdateManager.addUpdateable(this);
     }
 
@@ -63,48 +74,34 @@ class StartView extends BaseView implements IUpdateable {
     }
 
     public update(delta: number): void {
-        this._MasterPlane.update(delta, this);
-        this._SlaverPlane.update(delta, this);
-
+        this._MasterPlane.update(delta);
+        this._SlaverPlane.update(delta);
         this.updateBgMap();
     }
 
-    public connetWsHttp() {
-        this.sock = new egret.WebSocket();
-        this.sock.addEventListener( egret.ProgressEvent.SOCKET_DATA, this.onReceiveMessage, this );
-        this.sock.addEventListener( egret.Event.CONNECT, this.onSocketOpen, this );
-        this.sock.connect("39.100.133.182", 9502);
+    public addBullet(Plane:Plane) {
+        let bullet = new Bullet();
+        Plane.bulletDic.push(bullet)
+        bullet.x = Plane.x + Plane.width / 4;
+        bullet.y = Plane.y;
+        this.addChild(bullet)
     }
 
-    public onReceiveMessage(event:egret.Event) {
-        var msg = this.sock.readUTF();
-        let params = JSON.parse(msg);
-        switch (params.type) {
+    public wsReceive(params:Object) {
+        switch (params['type']) {
             case 1:
-                let isMaster = params.isMaster;
+                let isMaster = params['isMaster'];
                 if (0 == isMaster) {
                     this._MasterPlane.isMe = false;
                     this._SlaverPlane.isMe = true;
                 }
-                this.fdText.text = "FD_ID:" + params.fd
+                this.fdText.text = "FD_ID:" + params['fd']
                 break;
             case 2:
                 this._MasterPlane.changeFriendsPostion(params)
                 this._SlaverPlane.changeFriendsPostion(params)
                 break;
         }
-
-        console.log("收到数据：" + msg);
-    }
-
-    public onSocketOpen(event:egret.Event) {
-        var cmd = "Hello Egret WebSocket";    
-        console.log("连接成功，发送数据：" + cmd);
-    }
-
-    public sendWs(params: Object) {
-        let str:string = JSON.stringify(params)
-        this.sock.writeUTF(str);
     }
 
     public updateBgMap() {
